@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Colocar Footer Personalizado no Site.
  * Plugin URI: https://teste.com
- * Description: Este Plugin altera o footer do site.
+ * Description: Este Plugin Coloca o footer personalizado do site e verifica se o usuário está logado.
  * Version: 1.0.0
  * Author: Sergio Felzener
  * Author URI: https://teste.com
@@ -41,3 +41,20 @@ function footer_movie_games_wp(){
 }
 
 add_action( 'wp_footer' , 'footer_movie_games_wp' );
+
+add_action( 'init' , 'verifica_login');
+
+function verifica_login() {
+
+    if( is_user_logged_in() ) { //se o usuário estiver logado
+        //execute
+        echo  '<script>
+
+                    alert("Voce está Logado !!!")
+
+
+                </script>';
+
+    }
+
+}
