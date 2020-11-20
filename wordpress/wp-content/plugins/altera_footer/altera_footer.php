@@ -4,7 +4,7 @@
  * Plugin Name: Colocar Footer Personalizado no Site.
  * Plugin URI: https://teste.com
  * Description: Este Plugin Coloca o footer personalizado do site e verifica se o usuário está logado.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Sergio Felzener
  * Author URI: https://teste.com
  * Text Domain: woocommerce
