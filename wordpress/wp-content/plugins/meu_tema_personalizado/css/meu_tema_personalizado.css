@@ -1,0 +1,7 @@
+#welcome-panel {
+    background-image: url(moldure.jpg);
+    background-size: 1150px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}

@@ -33,17 +33,18 @@ class PainelPersonalizado
     {
 
         //Desativar a action welcome_panel
-
         remove_action('welcome_panel', 'wp_welcome_panel');
 
 
         // Adicionando meu painel personalizado
-
         add_action('welcome_panel', array($this,  'painel_personalizado'));
+        add_action('admin_enqueue_scripts', array($this, 'add_css'));
     }
 
     function painel_personalizado()
     {
+
+
 ?>
 
         <div class="welcome-panel">
@@ -70,6 +71,13 @@ class PainelPersonalizado
 
 <?php
 
+
+    }
+
+    function add_css(){
+
+        wp_register_style('painel_personalizado', plugin_dir_url( __FILE__ ). 'css/meu_tema_personalizado.css');
+        wp_enqueue_style('painel_personalizado');
 
     }
 }
