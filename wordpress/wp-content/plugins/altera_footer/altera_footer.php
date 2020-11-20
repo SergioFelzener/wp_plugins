@@ -7,7 +7,7 @@
  * Version: 1.0.1
  * Author: Sergio Felzener
  * Author URI: https://teste.com
- * Text Domain: woocommerce
+ * Text Domain: footer-personalizado
  * Domain Path: altera_footer
  * Requires at least: 5.3
  * Requires PHP: 7.0
