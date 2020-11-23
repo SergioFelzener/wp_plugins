@@ -19,7 +19,15 @@
 function footer_movie_games_wp(){
 
     echo "  <head>
-                <style>   
+                <style> 
+                
+                    footer { 
+                        bottom: 0;
+                        position: fixed;
+                        width: 100%;
+                        text-align: center;
+                        
+                    }
                     footer p {
                         padding: 5px 0;
                         padding-top: 10px;
@@ -46,25 +54,25 @@ add_action( 'wp_footer' , 'add_whatsapp' );
 function add_whatsapp(){
 
     echo "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-                <a href='https://wa.me/55(11940064715)?text=Entre%20em%20Contato%20Conosco%20via%20ZapZap' style='position:fixed;width:48px;height:46px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:20px;text-align:center;font-size:26px;box-shadow: 1px 1px 2px #888;
+                <a href='https://wa.me/55(11940064715)?text=Entre%20em%20Contato%20Conosco%20via%20ZapZap' style='position:fixed;width:40px;height:40px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:20px;text-align:center;font-size:20px;box-shadow: 1px 1px 2px #888;
                     z-index:1000;' target='_blank'>
-                        <i style='margin-top: 1px' class='fa fa-whatsapp'></i>
+                        <i style='margin-top: 10px' class='fa fa-whatsapp'></i>
                 </a>";
 }
 
-add_action( 'init' , 'verifica_login');
+//add_action( 'init' , 'verifica_login');
 
-function verifica_login() {
-
-    if( is_user_logged_in() ) { //se o usuário estiver logado
-        //execute
-        echo  '<script>
-
-                    alert("Voce está Logado !!!")
-
-
-                </script>';
-
-    }
-
-}
+//function verifica_login() {
+//
+//    if( is_user_logged_in() ) { //se o usuário estiver logado
+//        //execute
+//        echo  '<script>
+//
+//                    alert("Voce está Logado !!!")
+//
+//
+//                </script>';
+//
+//    }
+//
+//}
