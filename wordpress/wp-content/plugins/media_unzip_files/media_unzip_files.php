@@ -101,10 +101,11 @@
         
         ';
 
-
+        //Preparar arquivos para serem enviados
+        
         if ( isset($_FILES['fileToUpload']) ) {
 
-            //Preparar arquivos para serem enviados
+            
 
             //Obter diretorio do plugin 
 

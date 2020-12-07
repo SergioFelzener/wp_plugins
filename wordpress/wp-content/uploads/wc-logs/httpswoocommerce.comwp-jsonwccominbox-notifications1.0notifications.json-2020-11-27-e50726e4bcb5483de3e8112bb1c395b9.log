@@ -1,0 +1,36 @@
+2020-11-27T19:17:03+00:00 ERROR Error getting remote inbox notification data feed
+2020-11-27T19:17:03+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: name lookup timed out
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+2020-11-27T19:17:08+00:00 ERROR Error getting remote inbox notification data feed
+2020-11-27T19:17:08+00:00 ERROR WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 6: name lookup timed out
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
